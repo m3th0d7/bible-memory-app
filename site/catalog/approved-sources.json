@@ -1,100 +1,111 @@
 {
- "schemaVersion": 1,
- "scope": "Existing approved public Bible resources only; no new third-party collection rights are asserted.",
- "scripture": {
-  "id": "berean-standard-bible",
-  "title": "Berean Standard Bible",
-  "shortLabel": "BSB",
-  "license": "Public domain",
-  "termsUrl": "https://berean.bible/terms.htm",
-  "publisherUrl": "https://berean.bible/",
-  "chapterUrlTemplate": "https://bible.helloao.org/api/BSB/{book}/{chapter}.simple.json",
-  "selection": "Choose a verse, passage, or whole chapter using bible-books.json bounds. Add only after the visitor explicitly chooses it.",
-  "fidelity": "Use exact returned BSB verse text. Do not generate, paraphrase, or fill missing Scripture. This package does not vendor the Bible or claim offline coverage."
- },
- "stories": {
-  "id": "visitor-selected-bsb-stories",
-  "title": "Visitor-selected BSB Stories",
-  "methodCredit": "Story-learning method adapted from Dr. Larry Dinkins’ teaching.",
-  "selection": "Fresh visitors choose exact BSB passages and optional personal outlines. No preselected story collection is supplied.",
-  "compatibility": "Exact former public story metadata is used only to retain or restore already-touched legacy progress.",
-  "notIncluded": [
-   "third-party PDF downloads",
-   "new story commentary",
-   "story-specific pictures",
-   "private outlines",
-   "personal picture cues"
-  ],
-  "trainingUrl": "https://youtu.be/Xqd1_T7LP-E"
- },
- "study": {
-  "id": "existing-public-study-data",
-  "baseUrl": "https://audiobible.pages.dev/study-data/v2-a101d843a2f0cd3fc0c6-raw1/",
-  "contentVersion": "v2-a101d843a2f0cd3fc0c6",
-  "transportVersion": "v2-a101d843a2f0cd3fc0c6-raw1",
-  "manifestPath": "manifest.json",
-  "licensePath": "LICENSES.txt",
-  "sourceExceptionsPath": "source-exceptions.json",
-  "overviewPathTemplate": "overview/{book}.json",
-  "chapterPathTemplate": "chapters/{book}/{chapter}.json",
-  "dictionaryPathTemplate": "dictionary/{sha256}.json",
-  "coverage": {
-   "books": 66,
-   "chapters": 1189
+  "schemaVersion": 1,
+  "scope": "Approved public Bible resources only; Scripture text is fetched only after a visitor selects a passage. No Bible text is bundled.",
+  "scripture": {
+    "id": "berean-standard-bible",
+    "title": "Berean Standard Bible",
+    "shortLabel": "BSB",
+    "license": "Public domain",
+    "termsUrl": "https://berean.bible/terms.htm",
+    "publisherUrl": "https://berean.bible/",
+    "chapterUrlTemplate": "https://bible.helloao.org/api/BSB/{book}/{chapter}.simple.json",
+    "selection": "Choose a verse, passage, or whole chapter using bible-books.json bounds. Add only after the visitor explicitly chooses it.",
+    "fidelity": "Use exact returned BSB verse text. Do not generate, paraphrase, or fill missing Scripture. This package does not vendor the Bible or claim offline coverage."
   },
-  "sources": [
-   {
-    "id": "tyndale-notes",
-    "title": "Tyndale Open Study Notes",
-    "release": "1.25",
-    "copyright": "Copyright © 2022 by Tyndale House Publishers.",
-    "attribution": "Adapted from Tyndale Open Study Notes. The original work by Tyndale House Publishers is available for free at https://www.tyndaleopenresources.com/.",
-    "sourceUrl": "https://tyndaleopenresources.com/",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-    "archiveSha256": "7b4d5ae088449d5a6925170c4b89b978acee2f78f73dc6b8a278fa948a7e8498"
-   },
-   {
-    "id": "tyndale-dictionary",
-    "title": "Tyndale Open Bible Dictionary",
-    "release": "1.6",
-    "copyright": "Copyright © 2023 by Tyndale House Publishers.",
-    "attribution": "Adapted from Tyndale Open Bible Dictionary. The original work by Tyndale House Publishers is available for free at https://www.tyndaleopenresources.com/.",
-    "sourceUrl": "https://tyndaleopenresources.com/",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-    "archiveSha256": "10758ea00dbea7540f9337e43e59c8e4000295c1261e3426bab6f31c31dcff5b"
-   },
-   {
-    "id": "crossreferences-bsb",
-    "title": "CrossReferences.org · BSB cross-references",
-    "sourceUrl": "https://crossreferences.org/project/data/",
-    "repositoryUrl": "https://github.com/CrossReferences-org/bible-cross-references",
-    "commit": "d80dee38106c42982bb6c0834ceebb8a517e368a",
-    "sourcePath": "tsv/crossreferences_bsb.tsv",
-    "gitBlobSha1": "92e8e34d6b6fc51c8e8cd6d4f65c44c71f621056",
-    "sourceSha256": "54f5a7faada7695b8584aa2e46d57bf8fb593fc6ee8762bc2295851fed6b11bf",
-    "license": "CC BY 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
-    "attribution": "CrossReferences.org, Cross-References Data, BSB TSV. Based on the Treasury of Scripture Knowledge, with the project’s own curation and BSB mapping; not a verbatim reproduction of TSK."
-   }
-  ],
-  "changesNotice": "Original publisher wording is retained in inert JSON paragraph structures with display formatting and chapter indexes. Tyndale-derived adapted data remains CC BY-SA 4.0; CrossReferences.org mapping remains CC BY 4.0. No publisher endorsement is implied.",
-  "limitations": [
-   "Dictionary associations are selective, not a complete lexical concordance.",
-   "Honest empty lists and original source-reference exceptions must remain visible.",
-   "Maps, pictures, charts, and supplemental textboxes are not included.",
-   "Do not manufacture summaries, definitions, commentary, or cross-reference explanations."
-  ]
- },
- "audio": {
-  "sourceAppUrl": "https://audiobible.pages.dev/",
-  "mode": "Reuse the existing approved public player and streaming sources; no new recordings or rehosting are introduced by this catalog.",
-  "allowedFeaturedIds": [
-   "prayers",
-   "promises"
-  ],
-  "newPublicPlaylistDefinitions": [],
-  "importPrivatePresets": false
- }
+  "stories": {
+    "id": "visitor-selected-bsb-stories",
+    "title": "Visitor-selected BSB Stories",
+    "methodCredit": "Story-learning method adapted from Dr. Larry Dinkins’ teaching.",
+    "selection": "Fresh visitors choose exact BSB passages and optional personal outlines. No preselected story collection is supplied.",
+    "compatibility": "Exact former public story metadata is used only to retain or restore already-touched legacy progress.",
+    "notIncluded": [
+      "third-party PDF downloads",
+      "new story commentary",
+      "story-specific pictures",
+      "private outlines",
+      "personal picture cues"
+    ],
+    "trainingUrl": "https://youtu.be/Xqd1_T7LP-E"
+  },
+  "study": {
+    "id": "existing-public-study-data",
+    "baseUrl": "https://audiobible.pages.dev/study-data/v2-a101d843a2f0cd3fc0c6-raw1/",
+    "contentVersion": "v2-a101d843a2f0cd3fc0c6",
+    "transportVersion": "v2-a101d843a2f0cd3fc0c6-raw1",
+    "manifestPath": "manifest.json",
+    "licensePath": "LICENSES.txt",
+    "sourceExceptionsPath": "source-exceptions.json",
+    "overviewPathTemplate": "overview/{book}.json",
+    "chapterPathTemplate": "chapters/{book}/{chapter}.json",
+    "dictionaryPathTemplate": "dictionary/{sha256}.json",
+    "coverage": {
+      "books": 66,
+      "chapters": 1189
+    },
+    "sources": [
+      {
+        "id": "tyndale-notes",
+        "title": "Tyndale Open Study Notes",
+        "release": "1.25",
+        "copyright": "Copyright © 2022 by Tyndale House Publishers.",
+        "attribution": "Adapted from Tyndale Open Study Notes. The original work by Tyndale House Publishers is available for free at https://www.tyndaleopenresources.com/.",
+        "sourceUrl": "https://tyndaleopenresources.com/",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "archiveSha256": "7b4d5ae088449d5a6925170c4b89b978acee2f78f73dc6b8a278fa948a7e8498"
+      },
+      {
+        "id": "tyndale-dictionary",
+        "title": "Tyndale Open Bible Dictionary",
+        "release": "1.6",
+        "copyright": "Copyright © 2023 by Tyndale House Publishers.",
+        "attribution": "Adapted from Tyndale Open Bible Dictionary. The original work by Tyndale House Publishers is available for free at https://www.tyndaleopenresources.com/.",
+        "sourceUrl": "https://tyndaleopenresources.com/",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "archiveSha256": "10758ea00dbea7540f9337e43e59c8e4000295c1261e3426bab6f31c31dcff5b"
+      },
+      {
+        "id": "crossreferences-bsb",
+        "title": "CrossReferences.org · BSB cross-references",
+        "sourceUrl": "https://crossreferences.org/project/data/",
+        "repositoryUrl": "https://github.com/CrossReferences-org/bible-cross-references",
+        "commit": "d80dee38106c42982bb6c0834ceebb8a517e368a",
+        "sourcePath": "tsv/crossreferences_bsb.tsv",
+        "gitBlobSha1": "92e8e34d6b6fc51c8e8cd6d4f65c44c71f621056",
+        "sourceSha256": "54f5a7faada7695b8584aa2e46d57bf8fb593fc6ee8762bc2295851fed6b11bf",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attribution": "CrossReferences.org, Cross-References Data, BSB TSV. Based on the Treasury of Scripture Knowledge, with the project’s own curation and BSB mapping; not a verbatim reproduction of TSK."
+      }
+    ],
+    "changesNotice": "Original publisher wording is retained in inert JSON paragraph structures with display formatting and chapter indexes. Tyndale-derived adapted data remains CC BY-SA 4.0; CrossReferences.org mapping remains CC BY 4.0. No publisher endorsement is implied.",
+    "limitations": [
+      "Dictionary associations are selective, not a complete lexical concordance.",
+      "Honest empty lists and original source-reference exceptions must remain visible.",
+      "Maps, pictures, charts, and supplemental textboxes are not included.",
+      "Do not manufacture summaries, definitions, commentary, or cross-reference explanations."
+    ]
+  },
+  "audio": {
+    "sourceAppUrl": "https://audiobible.pages.dev/",
+    "mode": "Reuse the existing approved public player and streaming sources; no new recordings or rehosting are introduced by this catalog.",
+    "allowedFeaturedIds": [
+      "prayers",
+      "promises"
+    ],
+    "newPublicPlaylistDefinitions": [],
+    "importPrivatePresets": false
+  },
+  "additionalScripture": {
+    "id": "king-james-version",
+    "title": "King James Version",
+    "shortLabel": "KJV",
+    "translationId": "eng_kjv",
+    "chapterUrlTemplate": "https://bible.helloao.org/api/eng_kjv/{book}/{chapter}.simple.json",
+    "documentationUrl": "https://bible.helloao.org/docs/reference/translations/simplified.html",
+    "selection": "Choose an exact verse range or whole chapter; chapter verse counts are read from the selected KJV chapter before saving.",
+    "fidelity": "Preserve exact returned KJV verse text. Verify translation, book, chapter, and complete verse sequence. No BSB fallback and no KJV audio are provided.",
+    "rights": "Use the translation-specific license metadata supplied by the API; this catalog does not make an independent license claim."
+  }
 }
