@@ -1,7 +1,7 @@
 # Credits
 
 **Berean Standard Bible (BSB).** Public domain. https://berean.bible/terms.htm
-The app loads chapter text from https://bible.helloao.org when a visitor chooses a passage; the Bible is not stored in this repository. The King James Version is available through the same API as `eng_kjv` and is kept distinct from BSB passages.
+The app loads chapter text from https://bible.helloao.org when a visitor chooses a passage; the Bible is not stored in this repository. The King James Version is available through the same API as `eng_kjv` and is kept distinct from BSB passages. See the API's [translation documentation](https://bible.helloao.org/docs/reference/translations/simplified.html); its translation records provide the applicable source and license metadata.
 
 **BSB audio.** Narrated by Barry Hays. Public domain (CC0). Streamed from https://audio.bible.helloao.org and https://openbible.com; no audio is stored in this repository.
 
