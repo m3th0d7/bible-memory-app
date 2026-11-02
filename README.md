@@ -5,7 +5,8 @@ A free web app for memorizing Scripture with spaced review. Live example: https:
 - Recite a verse from its reference, with help when you need it: a picture, first letters, or listening.
 - Spaced review (FSRS) schedules each verse for the day you are about to forget it.
 - Make your own cards, with words and pictures on the front and back, or import cards from a CSV or an Anki text export.
-- Listen to any chapter of the Berean Standard Bible, read by Barry Hays, with study notes and cross-references.
+- Choose exact Berean Standard Bible (BSB) or King James Version (KJV) passages for memorization. KJV chapter verse counts are checked against the selected chapter before saving.
+- Listen to any chapter of the Berean Standard Bible, read by Barry Hays, with study notes and cross-references. KJV audio is not included.
 - Download a backup file and restore it in another browser.
 
 Everything a person saves stays in their own browser. There is no account, no server and no database, and nothing is sent anywhere except requests for Bible text and audio.
